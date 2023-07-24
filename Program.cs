@@ -82,48 +82,48 @@
 // Задача 59: Задайте двумерный массив из целых чисел. Напишите программу, 
 // которая удалит строку и столбец , на пересечении которых расположен наименьший элемент массива.
 
-int rows = 3;
+// int rows = 3;
 
-int columns = 3;
+// int columns = 3;
 
-int[,] matrix = new int[rows, columns]; // 3 строчки на 3 столбца 
+// int[,] matrix = new int[rows, columns]; // 3 строчки на 3 столбца 
 
-int min = int.MaxValue;
-int indexMinRow = 0; // Номер строчки с мин элементом
-int indexMinColumn = 0;// Номер столбца с мин элементом
+// int min = int.MaxValue;
+// int indexMinRow = 0; // Номер строчки с мин элементом
+// int indexMinColumn = 0;// Номер столбца с мин элементом
 
-for (int i = 0; i < matrix.GetLength(0); i++)
-{
-    for (int j = 0; j < matrix.GetLength(1); j++)
-    {
-        matrix[i, j] = new Random().Next(11);
-        Console.Write(matrix[i, j] + "\t"); // 1    2   3 
-        if (matrix[i, j] < min)
-        {
-            min = matrix[i, j];
-            indexMinRow = i;
-            indexMinColumn = j;
-        }
-    }
-    Console.WriteLine();
-}
-Console.WriteLine($"min: {min}");
-Console.WriteLine($"Стр с мин. элементом: {indexMinRow}");
-Console.WriteLine($"Стл с мин. элементом: {indexMinColumn}");
+// for (int i = 0; i < matrix.GetLength(0); i++)
+// {
+//     for (int j = 0; j < matrix.GetLength(1); j++)
+//     {
+//         matrix[i, j] = new Random().Next(11);
+//         Console.Write(matrix[i, j] + "\t"); // 1    2   3 
+//         if (matrix[i, j] < min)
+//         {
+//             min = matrix[i, j];
+//             indexMinRow = i;
+//             indexMinColumn = j;
+//         }
+//     }
+//     Console.WriteLine();
+// }
+// Console.WriteLine($"min: {min}");
+// Console.WriteLine($"Стр с мин. элементом: {indexMinRow}");
+// Console.WriteLine($"Стл с мин. элементом: {indexMinColumn}");
 
-Console.WriteLine();
+// Console.WriteLine();
 
-for (int i = 0; i < matrix.GetLength(0); i++)
-{
-    if (i != indexMinRow)
-    {
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            if (j != indexMinColumn)
-            {
-                Console.Write(matrix[i, j] + "\t");
-            }
-        }
-        Console.WriteLine();
-    }
-}
+// for (int i = 0; i < matrix.GetLength(0); i++)
+// {
+//     if (i != indexMinRow)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             if (j != indexMinColumn)
+//             {
+//                 Console.Write(matrix[i, j] + "\t");
+//             }
+//         }
+//         Console.WriteLine();
+//     }
+// }
